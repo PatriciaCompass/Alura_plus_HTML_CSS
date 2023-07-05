@@ -1,9 +1,10 @@
 :root {
     --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
-    --ciza-secundario: #C0C0C0;
     --cor-de-fundo: #00030C;
-    --fonte-principal:'Inter';
+    --fonte-principal: 'Inter';
+    --botao-azul-efeito: #3c92fa;
 }
 
 body {
@@ -28,29 +29,29 @@ body {
 }
 
 .container {
-    display: grid;
     height: 100vh;
+    display: grid;
     grid-template-columns: 50% 50%;
 }
 
 .container__botao {
     background-color: var(--botao-azul);
-    border-radius: 8px;
+    border-radius: 5px;
+    padding: 1em;
     color: var(--branco-principal);
     display: block;
-    padding: 1em;
     text-decoration: none;
     margin-bottom: 1em;
 }
 
 .botao_secundario {
     background-color: transparent;
-    border: 2px solid var(--branco-principal);
+    border: 2px solid var(--branco-principal)
 }
 
 .container__aviso {
-    color: var(--ciza-secundario);
     font-size: 12px;
+    color: var(--cinza-secundario);
 }
 
 .container__titulo {
@@ -66,7 +67,7 @@ body {
     margin: 0 6em;
 }
 
-.secundario__image {
+.secundario__imagem {
     width: 80%;
 }
 
@@ -80,11 +81,10 @@ body {
     font-size: 48px;
     color: var(--branco-principal);
     margin-bottom: 0.1em;
-    white-space: nowrap;   
 }
 
 .descricao__texto {
-    color: var(--ciza-secundario);
+    color: var(--cinza-secundario);
 }
 
 .secundario__botao {
@@ -114,19 +114,12 @@ body {
 
 .lista__item {
     font-size: 32px;
-    
-}
-
-.rodape__texto {
-    color: var(--cinza-secundario);
-    font-size: 14px;
-    margin: 2em 0;
-}
-
-.lista__link a{
-    text-decoration: none;
     color: var(--branco-principal);
-    margin-left: 1em;
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
 }
 
 .rodape__lista {
@@ -136,13 +129,16 @@ body {
     margin-top: 1em;
 }
 
-.rodape {
-    text-align: center;
-    margin: 0 3em;
+.lista__link a{
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 1em;
 }
 
-.rodape__logo {
-    margin-bottom: 2em;
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;
 }
 
 .lista__link a:hover {
